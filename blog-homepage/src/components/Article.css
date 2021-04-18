@@ -153,7 +153,7 @@ a {
 
 .cardImage2 {    
     aspect-ratio: auto 260 / 60;
-    height: 60px;
+    height: 80px;
     width: 360px;
 }
 
@@ -171,6 +171,7 @@ a {
     max-height: 100%;
     height: fit-content;
     width: fit-content;
+    object-fit: cover;
   }
   .author-image {
     width: 45px;
