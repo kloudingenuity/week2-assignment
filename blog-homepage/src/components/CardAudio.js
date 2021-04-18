@@ -8,10 +8,6 @@ class CardAudio extends Component {
         preview: PropTypes.bool.isRequired
     }
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className='dl'>

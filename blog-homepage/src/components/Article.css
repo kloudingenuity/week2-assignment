@@ -16,8 +16,7 @@ a {
     cursor: pointer;
 }
 
-.section {    
-    
+.section {        
     margin-top: 20px;
     margin-left: 60px;
     margin-right: 60px;
@@ -217,7 +216,7 @@ a {
   }
 
   .bookmark {
-    color: rgba(0, 0, 0, 0.54);
+    /* color: rgba(0, 0, 0, 0.54); */
     fill: currentColor;
     width: 1em;
     height: 1em;

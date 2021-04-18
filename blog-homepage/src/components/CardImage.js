@@ -9,12 +9,6 @@ class CardImage extends Component {
         type: PropTypes.string.isRequired
     }
 
-    constructor(props) {
-        super(props);
-        this.state = {            
-        };
-    }
-
     render() {
         const cardImage = this.props.type === 'your' ? 'cardImage cardImage1' : 'cardImage cardImage2';
 

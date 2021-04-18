@@ -5,26 +5,16 @@ import YourArticles from '../_data/your-articles.json';
 import MissedArticles from '../_data/missed-articles.json';
 
 class ArticleList extends Component {
-    
-    constructor(props) {
-        super(props);
-        this.state = {  
-            yourArticles: YourArticles,
-            missedArticles: MissedArticles,
-            isBookMarked: false      
-        };
-    }
-
     render() {
-        const yourArticleList = this.state.yourArticles.map((item, index) => {
-            return (<div className='column twocolumn'>
-                <ArticleCard key={index} article={item} type='your' />
+        const yourArticleList = YourArticles.map((item, index) => {
+            return (<div key={index.toString()} className='column twocolumn'>
+                <ArticleCard id={index} article={item} type='your' />
             </div>);
         });
         
-        const missedArticleList = this.state.missedArticles.map((item, index) => {
-            return (<div className='column threecolumn'>
-                <ArticleCard key={index} article={item} type='missed' />
+        const missedArticleList = MissedArticles.map((item, index) => {
+            return (<div key={index.toString()} className='column threecolumn'>
+                <ArticleCard id={index} article={item} type='missed' />
             </div>);
         });
 
