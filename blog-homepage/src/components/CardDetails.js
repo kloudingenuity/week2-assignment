@@ -6,7 +6,21 @@ import './Article.css';
 
 class CardDetails extends Component { 
     static propTypes = {
-        article: PropTypes.object.isRequired,
+        article: PropTypes.shape({
+            author: PropTypes.shape({
+              image: PropTypes.string.isRequired,
+              isMediumMember: PropTypes.bool.isRequired,
+              name: PropTypes.string.isRequired
+            }).isRequired,
+            description: PropTypes.string.isRequired,
+            hasAudioAvailable: PropTypes.bool.isRequired,
+            image: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired,
+            memberPreview: PropTypes.bool.isRequired,
+            minutesToRead: PropTypes.number.isRequired,
+            postedDate: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired
+          }).isRequired,
         isBookMarked: PropTypes.bool.isRequired
     }
 
