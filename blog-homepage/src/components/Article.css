@@ -93,11 +93,11 @@ a {
     0 4px 8px rgba(#000, 0.2);
 }
 
-.article:active {
+/* .article:active {
     box-shadow: none;
     transform-origin: center;
     transform: scale(0.98);
-}
+} */
 
 .article__category {
     display: inline-block;
