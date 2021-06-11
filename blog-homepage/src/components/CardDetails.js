@@ -32,7 +32,7 @@ class CardDetails extends Component {
 
     render() {
         const [name, image, isMediumMember, title, description, link, postedDate, minutesToRead, hasAudio, memberPreview] = 
-        [this.props.article.author.name, this.props.article.author.image, this.props.article.author.isMediumMember, this.props.article.title, 
+        [...this.props.article.author, this.props.article.title, 
             this.props.article.description, this.props.article.link, this.props.article.postedDate, this.props.article.minutesToRead, 
             this.props.article.hasAudioAvailable, this.props.article.memberPreview];
 
